@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PHP y JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #007acc;
+      overflow-x: auto;
+    }
+    .code-title {
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .ejemplo-js {
+      background-color: #eaf7ff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    h2 {
+      color: #007acc;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #007acc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lenguajes de Programación</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="php-javascript.html">PHP y JavaScript</a>
+      <a href="python-java.html">Python y Java</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué es PHP?</h2>
+      <p>PHP (Hypertext Preprocessor) es un lenguaje de programación del lado del servidor, ampliamente utilizado para el desarrollo web. Permite generar contenido dinámico, trabajar con bases de datos y manejar sesiones de usuarios.</p>
+
+      <h3>Ventajas de PHP</h3>
+      <ul>
+        <li>Fácil de aprender para principiantes</li>
+        <li>Ampliamente soportado por servidores</li>
+        <li>Gran comunidad y muchos recursos disponibles</li>
+        <li>Integración sencilla con HTML y bases de datos como MySQL</li>
+        <li>Compatible con la mayoría de los sistemas operativos</li>
+      </ul>
+
+      <div class="code-title">Ejemplo de código PHP:</div>
+      <pre><code>&lt;?php
+$nombre = "Carlos";
+echo "Hola, $nombre. Bienvenido al mundo de PHP.";
+?&gt;</code></pre>
+
+      <p>Este código muestra un mensaje personalizado en una página web usando una variable.</p>
+    </section>
+
+    <section>
+      <h2>¿Qué es JavaScript?</h2>
+      <p>JavaScript es un lenguaje de programación que se ejecuta en el navegador web. Permite crear sitios interactivos, validar formularios, animar elementos, modificar el contenido dinámicamente y trabajar con APIs externas.</p>
+
+      <h3>Ventajas de JavaScript</h3>
+      <ul>
+        <li>Lenguaje del lado del cliente, sin necesidad de servidor</li>
+        <li>Base de todos los frameworks modernos (React, Angular, Vue)</li>
+        <li>Permite desarrollo full stack con Node.js</li>
+        <li>Compatible con todos los navegadores actuales</li>
+        <li>Fácil de aprender y comenzar a usar</li>
+      </ul>
+
+      <div class="code-title">Ejemplo básico de JavaScript:</div>
+      <pre><code>&lt;script&gt;
+let nombre = prompt("¿Cuál es tu nombre?");
+alert("Hola " + nombre + ", bienvenido a JavaScript.");
+&lt;/script&gt;</code></pre>
+
+      <p>Este script saluda al usuario por su nombre usando una ventana emergente.</p>
+
+      <div class="code-title">Interactividad con botón:</div>
+      <div class="ejemplo-js">
+        <p><strong>Prueba este botón:</strong></p>
+        <button onclick="saludar()">Haz clic aquí</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog de Lenguajes de Programación | PHP y JavaScript</p>
+  </footer>
+
+  <script>
+    function saludar() {
+      alert("¡Hola desde JavaScript! Esto es interactividad del lado del cliente.");
+    }
+  </script>
+</body>
+</html>
